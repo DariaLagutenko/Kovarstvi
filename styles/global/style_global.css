@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Tenor+Sans&display=swap");
+body {
+  margin: 0;
+  background-color: #010000;
+  color: rgb(235, 148, 66);
+  text-align: center;
+  font-family: "Tenor Sans", sans-serif;
+}
+body header {
+  background-image: url(../../images/uvodni.jpg);
+  background-color: #010000;
+  background-size: cover;
+  background-position: center;
+  font-family: Cinzel, "Times New Roman", serif;
+  height: 500px;
+  width: 100%;
+}
+body header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+body header nav .nav-part {
+  display: flex;
+  flex-direction: row;
+}
+body header nav .nav-part a {
+  background-color: rgb(235, 148, 66);
+  border-radius: 5px;
+  box-shadow: -1px 1px 6px 4px black;
+  color: black;
+  font-weight: bold;
+  line-height: 30px;
+  margin: 0 15px;
+  opacity: 0.8;
+  text-transform: uppercase;
+  text-decoration: none;
+  min-width: 100px;
+  width: -moz-fit-content;
+  width: fit-content;
+  animation: fadein 3s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+body header nav .nav-part a:hover {
+  transform: scale(1.15);
+}
+body header nav .nav-part a.logo {
+  background: transparent;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  opacity: 1;
+  box-shadow: none;
+  animation: fadein 2s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+body header nav .nav-part a.logo #logo {
+  opacity: 0.8;
+  border-radius: 55%;
+  height: 160px;
+  width: auto;
+  box-shadow: -1px 1px 5px 5px black;
+}
+body main {
+  box-sizing: border-box;
+}
+body main h1, body main h2 {
+  font-family: Cinzel, "Times New Roman", serif;
+}
+body main h1 {
+  font-size: 2.5em;
+}
+body main h2 {
+  background-color: rgb(235, 148, 66);
+  color: #010000;
+  text-transform: uppercase;
+  line-height: 40px;
+  font-size: 1.15em;
+}
+body main .button {
+  background-color: rgb(77, 34, 8);
+  color: rgb(241, 175, 52);
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+body main .button:hover {
+  transform: scale(1.1);
+}
+@media screen and (max-width: 900px) {
+  body main {
+    padding: 30px 50px;
+  }
+}
+@media screen and (max-width: 750px) {
+  body main {
+    padding: 30px 25px;
+  }
+}
+body footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  background-color: rgba(70, 25, 1, 0.6);
+  color: rgb(235, 148, 66);
+}/*# sourceMappingURL=style_global.css.map */

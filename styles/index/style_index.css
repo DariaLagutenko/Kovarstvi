@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Tenor+Sans&display=swap");
+main {
+  padding: 30px 100px;
+  overflow-x: hidden;
+}
+main .intro #motto {
+  font-style: italic;
+  font-size: 1.2em;
+}
+main img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+  height: auto;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .why #reasons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 40px 0;
+  width: 100%;
+}
+main .why #reasons div {
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+  width: 33.3333333333%;
+  padding: 3%;
+  border-right: 1px solid rgb(235, 148, 66);
+}
+main .why #reasons div i {
+  transform: scale(2);
+}
+@media screen and (max-width: 700px) {
+  main .why #reasons div i {
+    padding-top: 10px;
+  }
+}
+main .why #reasons div h3 {
+  text-align: center;
+  font-size: 1.1em;
+}
+main .why #reasons div:last-child {
+  border: none;
+}
+@media screen and (max-width: 700px) {
+  main .why #reasons div {
+    border-right: none;
+    border-bottom: 1px solid rgb(235, 148, 66);
+    max-width: 100%;
+    width: auto;
+  }
+}
+@media screen and (max-width: 700px) {
+  main .why #reasons {
+    flex-direction: column;
+    margin-top: 0;
+  }
+}
+main .quick #quick-con {
+  display: flex;
+  flex-direction: row;
+  height: -moz-fit-content;
+  height: fit-content;
+  justify-content: space-around;
+  margin: 40px 0;
+  text-align: center;
+  width: 100%;
+}
+main .quick #quick-con .qc {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: space-around;
+}
+main .quick #quick-con .qc div {
+  width: 50%;
+  max-width: 250px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+main .quick #quick-con .qc div:hover {
+  transform: scale(1.1);
+}
+main .quick #quick-con .qc div:last-child {
+  border-right: none;
+}
+main .quick #quick-con .qc div:hover a, main .quick #quick-con .qc div:hover i, main .quick #quick-con .qc div:hover p {
+  color: rgb(253, 110, 1);
+}
+@media screen and (max-width: 450px) {
+  main .quick #quick-con .qc div {
+    margin: 10px auto;
+    width: 100%;
+  }
+}
+main .quick #quick-con .qc i {
+  transform: scale(1.5);
+  line-height: 25px;
+  margin: 0;
+}
+main .quick #quick-con .qc a {
+  color: rgb(235, 148, 66);
+  text-decoration: none;
+}
+@media screen and (max-width: 950px) {
+  main .quick #quick-con .qc {
+    justify-content: space-around;
+    width: 95%;
+  }
+}
+@media screen and (max-width: 450px) {
+  main .quick #quick-con .qc {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 950px) {
+  main .quick #quick-con {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style_index.css.map */

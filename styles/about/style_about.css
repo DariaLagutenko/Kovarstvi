@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Tenor+Sans&display=swap");
+main {
+  padding: 30px 100px;
+}
+main .smiths {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+main .smiths .team {
+  display: flex;
+  flex-direction: column;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 3%;
+  width: 50%;
+  justify-content: center;
+  text-align: center;
+}
+main .smiths .team img {
+  width: 100%;
+  min-height: 250px;
+  min-width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .smiths .team figcaption {
+  font-style: italic;
+  padding-top: 20px;
+}
+main .smiths .team p {
+  font-size: 0.9em;
+}
+@media screen and (max-width: 700px) {
+  main .smiths .team {
+    margin: auto;
+    width: 75%;
+  }
+}
+@media screen and (max-width: 480px) {
+  main .smiths .team {
+    padding: 0;
+    width: 85%;
+  }
+}
+@media screen and (max-width: 700px) {
+  main .smiths {
+    flex-direction: column;
+  }
+}
+main #smithery {
+  width: 100%;
+  height: auto;
+  max-width: 700px;
+  max-height: auto;
+}
+main .orders {
+  padding: 50px 0;
+}
+main .orders .proces {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+main .orders .proces div {
+  width: 33.3333333333%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(235, 148, 66);
+  padding: 3%;
+  align-items: center;
+}
+@media screen and (max-width: 930px) {
+  main .orders .proces div {
+    width: auto;
+  }
+}
+main .orders .proces div .step {
+  color: rgb(235, 148, 66);
+  background-color: rgb(77, 34, 8);
+  border-radius: 50%;
+  font-size: 2em;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  font-style: italic;
+}
+@media screen and (max-width: 930px) {
+  main .orders .proces {
+    flex-direction: column;
+  }
+}
+main .pricelist {
+  margin-bottom: 40px;
+}
+main .pricelist a {
+  color: rgb(235, 148, 66);
+}
+main .pricelist table {
+  text-align: center;
+  color: rgb(235, 148, 66);
+  width: 100%;
+  border-collapse: collapse;
+  margin: auto;
+  text-align: left;
+  max-width: 510px;
+}
+main .pricelist table th {
+  background-color: rgb(77, 34, 8);
+  color: rgb(235, 148, 66);
+  border: 2px solid rgb(77, 34, 8);
+}
+main .pricelist table td {
+  border: 2px solid rgb(77, 34, 8);
+}
+main .reference h2 {
+  margin: 25px 0;
+}
+main .reference .reflist {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  color: rgb(235, 148, 66);
+}
+@media screen and (max-width: 700px) {
+  main .reference .reflist {
+    flex-direction: column;
+  }
+}
+main .reference .reflist .column {
+  display: flex;
+  flex-direction: column;
+  width: -moz-max-content;
+  width: max-content;
+  gap: 20px;
+}
+main .reference .reflist .column img {
+  max-height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 700px) {
+  main .reference .reflist .column img {
+    height: 280px;
+    width: 230px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+main .reference .reflist .column .ref {
+  padding: 5px;
+}
+main .reference .reflist .column p:nth-of-type(2) {
+  font-style: italic;
+}
+@media screen and (max-width: 700px) {
+  main .reference .reflist .column {
+    width: auto;
+  }
+  main .reference .reflist .column:nth-child(2) {
+    order: 3;
+  }
+}
+main h2 {
+  margin-bottom: 40px;
+}/*# sourceMappingURL=style_about.css.map */

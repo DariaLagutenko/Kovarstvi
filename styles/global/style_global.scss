@@ -1,0 +1,159 @@
+@import "../variables.scss";
+
+body{
+    margin: 0;
+    background-color: $bg-color;
+    color: $text-color;
+    text-align: center;
+    font-family: $text-font;
+    
+    
+
+    header{
+        background-image: url(../../images/uvodni.jpg);
+        background-color: $bg-color;
+        background-size: cover;
+        background-position: center;
+        font-family: $header-font;
+        height: 500px;
+        width: 100%;
+        
+
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 50px;
+            // position: fixed;
+            // top: 0;
+            
+
+            .nav-part{
+                display: flex;
+                flex-direction: row;
+                
+                
+                a{
+                    background-color: $section-bg;
+                    border-radius: 5px;
+                    box-shadow: -1px 1px 6px 4px black;
+                    color: black;
+                    font-weight: bold;
+                    line-height: 30px;
+                    margin: 0 15px;
+                    opacity: 0.8;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    min-width: 100px;
+                    width: fit-content;
+
+                    animation: fadein 3s;
+                    @keyframes fadein {
+                        from {
+                            opacity:0;
+                        }
+                        to {
+                            opacity:0.8;
+                        }
+                    }
+                    
+                    
+    
+                    &:hover{
+                        transform: scale(1.15);
+                    }
+    
+                    &.logo{
+                        background: transparent;
+                        width: fit-content;
+                        height: fit-content;
+                        opacity: 1.0;
+                        box-shadow: none;
+
+                        animation: fadein 2s;
+                            @keyframes fadein {
+                                from {
+                                    opacity:0;
+                                }
+                                to {
+                                    opacity:0.8;
+                                }
+                            }
+
+                        #logo{
+                            opacity: 0.8;
+                            border-radius: 55%;
+                            height: 160px;
+                            width: auto;
+                            box-shadow: -1px 1px 5px 5px black;
+
+                            
+                        } 
+                    }
+                } 
+            }   
+        }   
+    }
+
+    main{
+
+        box-sizing: border-box;
+
+        h1, h2{
+            font-family: $header-font;
+        }
+
+        h1{
+            font-size: 2.5em;  
+        }
+
+        h2{
+            background-color: $section-bg;
+            color: #010000;
+            text-transform: uppercase;
+            line-height: 40px;
+            font-size: 1.15em;
+        }
+
+        .button{
+            background-color: $button-bg;
+            color: $button-text;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            // margin-bottom: 30px;
+            font-weight: bold;
+            font-size: 0.9em;
+
+            &:hover{
+                transform: scale(1.1);
+                // color: rgb(241, 175, 52);
+            }
+        }
+
+        @media screen and (max-width: 900px){
+            padding: 30px 50px;
+        }
+        
+        @media screen and (max-width: 750px){
+            padding: 30px 25px;
+        }
+    }
+    
+    
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+        background-color: #46190199;
+        color: rgb(235, 148, 66);
+
+        // p:nth-child(2){
+        //     padding-bottom: 20px;
+        // }
+    }
+}

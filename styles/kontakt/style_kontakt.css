@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Tenor+Sans&display=swap");
+main {
+  padding: 30px 100px;
+}
+main .contactContainer {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+}
+main .contactContainer .contact {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 60px;
+  margin-bottom: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  main .contactContainer .contact {
+    flex-direction: column;
+  }
+}
+main .contactContainer .contact .data {
+  width: 40%;
+  height: 470px;
+  color: rgb(235, 148, 66);
+  border: 5px double rgb(235, 148, 66);
+  font-size: 1.1em;
+}
+@media screen and (max-width: 750px) {
+  main .contactContainer .contact .data {
+    width: 60%;
+    font-size: 1em;
+    height: 420px;
+  }
+}
+@media screen and (max-width: 500px) {
+  main .contactContainer .contact .data {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 400px) {
+  main .contactContainer .contact .data {
+    width: 95%;
+  }
+}
+main .contactContainer .contact .data h4 {
+  text-transform: uppercase;
+}
+main .contactContainer .contact .data p {
+  padding: 10px;
+}
+main .contactContainer .contact .data a {
+  color: rgb(235, 148, 66);
+}
+main .contactContainer .contact .data a:hover {
+  color: rgb(253, 110, 1);
+}
+main .contactContainer .contact .data i {
+  transform: scale(1.5);
+}
+main .contactContainer .contact .theform {
+  width: 40%;
+  text-align: left;
+}
+@media screen and (max-width: 750px) {
+  main .contactContainer .contact .theform {
+    width: 60%;
+    font-size: 0.9em;
+  }
+  main .contactContainer .contact .theform label {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 500px) {
+  main .contactContainer .contact .theform {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 400px) {
+  main .contactContainer .contact .theform {
+    width: 95%;
+  }
+}
+main .contactContainer .contact .theform h4 {
+  text-transform: uppercase;
+  font-size: 1.1em;
+  padding-left: 5px;
+}
+main .contactContainer .contact .theform form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: none;
+  text-align: left;
+}
+main .contactContainer .contact .theform form label {
+  text-align: left;
+}
+main .contactContainer .contact .theform form textarea, main .contactContainer .contact .theform form input {
+  background-color: #f6c486;
+}
+main .contactContainer .contact .theform form ::-moz-placeholder {
+  color: #242020;
+}
+main .contactContainer .contact .theform form ::placeholder {
+  color: #242020;
+}
+main .contactContainer .contact .theform form .button {
+  width: 100px;
+  cursor: pointer;
+}
+main .contactContainer .contact .theform form .button:hover {
+  transform: none;
+}
+main .contactContainer iframe {
+  height: 400px;
+  width: 100%;
+}/*# sourceMappingURL=style_kontakt.css.map */
